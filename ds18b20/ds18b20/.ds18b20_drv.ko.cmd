@@ -1,0 +1,1 @@
+cmd_/opt/drivers/ds18b20/ds18b20/ds18b20_drv.ko := arm-linux-ld -EL -r  -T /opt/EmbedSky/TQ210/Kernel_3.0.8_TQ210_for_Linux_v2.1/scripts/module-common.lds --build-id  -o /opt/drivers/ds18b20/ds18b20/ds18b20_drv.ko /opt/drivers/ds18b20/ds18b20/ds18b20_drv.o /opt/drivers/ds18b20/ds18b20/ds18b20_drv.mod.o

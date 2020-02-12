@@ -1,0 +1,16 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\salers\Desktop\OLED小液晶打包资料\OLED小液晶打包资料\STC51 驱动OLED\OLED12864.uvproj
+Project File Date:  09/15/2011
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling OLED12864.c...
+linking...
+Program Size: data=23.0 xdata=0 code=5407
+creating hex file from "OLED12864"...
+"OLED12864" - 0 Error(s), 0 Warning(s).

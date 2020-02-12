@@ -1,0 +1,1 @@
+-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\FWlib\src -I..\user -I "E:\Program Files\Kill\ARM\RV31\Inc" -I "E:\Program Files\Kill\ARM\CMSIS\Include" -I "E:\Program Files\Kill\ARM\Inc\ST\STM32F10x" -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o "..\Uotput\systick.o" --omf_browse "..\Uotput\systick.crf" --depend "..\Uotput\systick.d" "systick.c"
