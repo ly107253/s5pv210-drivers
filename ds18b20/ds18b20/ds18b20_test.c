@@ -13,30 +13,28 @@ int main(int argc, char *argv[])
 {
         int fd;
         int data;
-        unsigned char relbit;
+		char cData[10];
+        unsigned char rel = 12;
         int isread = 1;
-
+		double dValue;
+		
         fd = open("/dev/ds18b20", O_RDWR);
         if (fd < 0) {
                 printf("open ds18b20 failed.\n");
                 exit(-1);
-        }
+        }   
+    
 
-        if (argc < 2)  {
-                printf("usage:\n %s <9|10|11|12>\n", argv[0]);
-                exit(-1);
-        }
-       
-        relbit = strtoul(argv[1], NULL, 10);
-        
-        ioctl(fd, DS18B20_REL, &relbit);
-        read(fd, &data, 4);
-        sleep(1);
+
+		ioctl(fd,DS18B20_REL,&rel);
+
         
         while (1) {
-                read(fd, &data, sizeof(data));
-                sleep(1);
-                printf("%.3f\n", (float)data / 10000);        
+					read(fd,&data,sizeof(data));
+					dValue = (float)data/10000;
+					sprintf(cData, "%.3f", dValue);
+					printf("%s\n",cData );
+					sleep(1);
         }
         close(fd);
         return 0;
