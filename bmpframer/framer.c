@@ -7,7 +7,7 @@
 #include <sys/mman.h>
 
 
-#define  FILE  "/dev/fb1"      // 设备文件
+#define  FILE  "/dev/fb0"      // 设备文件
  
 
  /*计算机颜色16进制表示符*/
